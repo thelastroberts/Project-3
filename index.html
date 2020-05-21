@@ -24,39 +24,58 @@
 
 <p class="newsBro">Get the latest news on how your code is doing right in your inbox</p>
 
+
 <div class= "linebreak"></div>
 
+<main>
 <form action="index.html" method="POST">
 
   <fieldset>
     <legend>   Contact Information</legend>
 
-
-
-
+    <div  class="tryout">
+        <!-- class for tryout here -->
+    <br><br>
+    
+  <div class="cont">
     <label for="name">Full Name</label>
     <input type="text" id="name" name="user_name" placeholder="Required">
+</div>
 
+
+    <div class="cont">
     <label for="email">Email Address</label>
-    <input type="text" id="email"   name="user_email" placeholder="Required">
+    <input type="email" id="email"   name="user_email" placeholder="Required">
+    </div>
 
+    <div class="cont">
     <label for="contact">Phone Numer</label>
     <input type="tel" id="contact" name="user_contact">
+    </div>
 
+    <div class="cont">
     <label for="address">Street Address</label>
     <input type="text" id="address" name="user_address">
+    </div>
 
+    <div class="cont">
     <label for="state">State</label>
     <select id="state" name="user_state">
-        <option>Choose State</option>
+        <option value="">Choose State</option>
         <option value="washington">Washington</option>
         <option value="new_york">New York</option>
         <option value="massachusetts">Massachusetts</option>
         <option value="florida">Florida</option>
     </select>
+    </div>
 
+
+<div class="cont">
     <label for="zip">Zip Code</label>
     <input type="number" id="zip" name="user_zip">
+</div>
+
+</div>
 
 </fieldset>
 
@@ -73,7 +92,7 @@
     <label class="light" for="htmlnews">HTML News</label><br><br>
 
     <input type="checkbox" id="cssnews" value="news_cssnews" name="user_cssnews">
-    <label> class="light" for="cssnews">Css News</label><br><br>
+    <label class="light" for="cssnews">Css News</label><br><br>
 
     <input type="checkbox" id="javascriptnews" value="news_javascriptnews" name="user_javascriptnews">
     <label class="light" for="javascriptnews">Javascript News</label><br><br>
@@ -84,14 +103,20 @@
     <label class="light" for="html">HTML</label><br><br>
 
     <input type="radio" id="plaintxt" value="plaintxt" name="user_format">
-    <label class="light" for="plaintxt">Plain text</label>
+    <label class="light" for="plaintxt">Plain text</label><br><br>
 
-    <p>Other topics you'd like to hear about</p>
+    
 
 
+    <label for="othertop">Other topics you'd like to hear about </label>
     <textarea id="othertop" name="user_othertop"></textarea>
 </fieldset>
 <button type="submit">Sign Up</button>
+
+
+</main> 
+</form>
+
 
 <footer>
 <p>Copyright The Code Review</p>
@@ -112,7 +137,7 @@
 
 
 
-</form>
+
 
     
 </body>
