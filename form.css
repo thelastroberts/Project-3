@@ -55,7 +55,7 @@ margin: 0 45px;
   }
   
   form {
-    max-width: 400px;
+    width: 400px; 
     margin: 30px auto;
     padding: 10px 20px;
     background: #f4f7f8;
@@ -69,6 +69,8 @@ margin: 0 45px;
     text-align: left;
   }
  
+
+  
   
    input[type="text"],
   input[type="password"],
@@ -97,10 +99,24 @@ margin: 0 45px;
     
   }  
 
-  input:focus{
-
-    border-bottom-color: lightsalmon;
+  textarea{
+    width:100%
   }
+
+  input[type="number"]{
+    width:35%;
+
+  }
+
+  input:focus,
+    select:focus,
+    textarea:focus {
+        color: black;
+        background-color: rgb(0, 174, 255);
+        transition-property: background-color;
+        transition-delay: .3s;
+        transition-duration: 2s;
+    }
 
   
   input[type="radio"],
@@ -110,11 +126,9 @@ margin: 0 45px;
     display: inline-block;
   }
 
-  
-  select {
-    /* padding: 6px; */
-    /* height: 32px; */
-    /* border-radius: 2px; */
+  select[id='state'] {
+    margin-right: 10px;
+    width: 70%; 
   }
   
   button {
@@ -166,7 +180,7 @@ margin: 0 45px;
      font-style: italic;
  }
   
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
 
     .linebreak{
         border-bottom: rgb(0, 0, 0);
@@ -175,7 +189,7 @@ margin: 0 45px;
               }
   
      form {
-      min-width: 100%;
+      width: 100%;
     } 
 
     main{
@@ -206,9 +220,7 @@ margin: 0 45px;
     
   }
 
-     /* .try1{
-      flex-basis: 10%;
-    }   */
+  
 
   
   
